@@ -1,14 +1,15 @@
 import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (
     <header>
       <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
         <Container>
-          {/* <Link to="/"> */}
-          <Navbar.Brand href="/">Probadminton</Navbar.Brand>
-          {/* </Link> */}
+          <Link to="/">
+            <Navbar.Brand href="/">Probadminton</Navbar.Brand>
+          </Link>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             {/* change from ml-auto to ms-auto */}
